@@ -1,0 +1,10 @@
+ext {
+    supportVersion = '28.0.0'
+    retrofitVersion = '2.5.0'
+    firebaseCoreVersion = '16.0.6'
+    firebaseDBVersion = '16.0.5'
+    RXJavaVersion = '2.2.5'
+    RXAndroidVersion = '2.1.0'
+    DaggerVersion = '2.20'
+
+}
