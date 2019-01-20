@@ -26,4 +26,6 @@ public class InfoHolder extends RecyclerView.ViewHolder implements View.OnClickL
     public void onClick(View v) {
         listener.onEditTextClick(getAdapterPosition());
     }
+
+
 }

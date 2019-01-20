@@ -7,4 +7,7 @@ import com.arellomobile.mvp.viewstate.strategy.StateStrategyType;
 @StateStrategyType(OneExecutionStateStrategy.class)
 public interface RegistrationActivityMethods extends MvpView {
     void showSnackbar();
+    void getUserData();
+    void showProgress();
+    void hideProgress();
 }

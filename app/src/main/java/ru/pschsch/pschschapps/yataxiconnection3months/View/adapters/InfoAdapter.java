@@ -45,6 +45,7 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoHolder>{
                 infoHolder.tv.setText(getStringResource(R.string.telephone));
                 infoHolder.et.setInputType(InputType.TYPE_CLASS_NUMBER);
                 infoHolder.et.setFilters(new InputFilter[]{new InputFilter.LengthFilter(Filters.TELEPHONE.length)});
+                infoHolder.et.setText(R.string.tel_begin);
                 break;
             case 4:
                 infoHolder.tv.setText(getStringResource(R.string.serialDL));
@@ -110,5 +111,6 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoHolder>{
             this.length = length;
         }
     }
+
 }
 

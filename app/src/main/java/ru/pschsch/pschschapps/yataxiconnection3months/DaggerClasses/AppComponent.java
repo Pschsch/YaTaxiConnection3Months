@@ -2,7 +2,10 @@ package ru.pschsch.pschschapps.yataxiconnection3months.DaggerClasses;
 
 import android.support.v7.app.AppCompatActivity;
 
+import com.arellomobile.mvp.MvpPresenter;
+
 import dagger.Component;
+import ru.pschsch.pschschapps.yataxiconnection3months.Presenter.RegistrationPresenter;
 import ru.pschsch.pschschapps.yataxiconnection3months.View.MainActivity;
 /**Dagger генерирует класс, имплементирующий этот интерфейс, который и будет классом компонента
  *В аннотации Component передаются классы модулей, если их несколько, в которых компонент
@@ -15,5 +18,5 @@ import ru.pschsch.pschschapps.yataxiconnection3months.View.MainActivity;
  * чены как Inject)*/
 @Component(modules = DependencyModule.class)
 public interface AppComponent {
-    void injectActivity(AppCompatActivity activity);
+    void injectToPresenter(RegistrationPresenter presenter);
 }

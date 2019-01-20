@@ -45,6 +45,8 @@
     <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
         <item name="android:windowBackground">@color/light</item>
         <item name="android:ems">10</item>
+        <item name="android:fontFamily">@font/alice</item>
+        <item name="android:colorAccent">@color/colorPrimaryDark</item>
     </style>
     <style name="CardViewStyle" parent="CardView.Light">
         <item name="cardBackgroundColor">@color/light</item>

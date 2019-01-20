@@ -2,6 +2,7 @@ package ru.pschsch.pschschapps.yataxiconnection3months.View.activities;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.PersistableBundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,7 +43,8 @@ public class RegistrationActivity extends MvpAppCompatActivity implements Regist
     Button mButton;
     @BindView(R.id.parent_layout)
     ConstraintLayout mParentLayout;
-
+    @BindView(R.id.progressBar)
+    ProgressBar mProgress;
 
     private LinearLayoutManager mLinearLayoutManager;
     private EditText mEditText;
@@ -72,7 +75,11 @@ public class RegistrationActivity extends MvpAppCompatActivity implements Regist
         mAdapter = new InfoAdapter(this, this);
         mRecyclerView.setAdapter(mAdapter);
 
-        mButton.setOnClickListener( v -> mPresenter.ViewShowSnackBar() );
+        mButton.setOnClickListener( v -> {
+            showProgress();
+            new Handler().postDelayed(this::hideProgress, 2500);
+        }
+        );
     }
 
     @Override
@@ -107,10 +114,7 @@ public class RegistrationActivity extends MvpAppCompatActivity implements Regist
                 mEditText.setText(format.format(mCalendar.getTime()));
             }
         };
-        mDPDialog = new DatePickerDialog(this,
-                R.style.DatePickerStyle,
-                listener,
-                year, month, day);
+        mDPDialog = new DatePickerDialog(this, R.style.DatePickerStyle, listener, year, month, day);
             switch(position) {
                 case DL_BEGIN_POSITION :
                 case DL_END_POSITION:
@@ -120,10 +124,28 @@ public class RegistrationActivity extends MvpAppCompatActivity implements Regist
             }
         }
 
-
     @Override
     public void showSnackbar() {
        Snackbar.make(mParentLayout, R.string.enter_all_fields, Snackbar.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void getUserData(){
+
+    }
+
+    public boolean checkUserData(){
+        return false;
+    }
+
+    @Override
+    public void showProgress() {
+       mProgress.setVisibility(ProgressBar.VISIBLE);
+    }
+
+    @Override
+    public void hideProgress() {
+       mProgress.setVisibility(ProgressBar.INVISIBLE);
     }
 
 }

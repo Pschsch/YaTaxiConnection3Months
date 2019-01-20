@@ -48,16 +48,18 @@ public class SplashActivity extends AppCompatActivity {
         mAnimatorSet.start();
 
         mHandler = new Handler(Looper.getMainLooper());
-        mHandler.postDelayed( () -> {
-            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-            startActivity(intent);
-            SplashActivity.this.finish();
-        }, SPLASH_DURATION);
+        mHandler.postDelayed(this::startMainActivity , SPLASH_DURATION);
     }
 
     public ObjectAnimator animateFromAlpha0To1 (View v){
         ObjectAnimator alphaAnimator = ObjectAnimator.ofFloat(v, "alpha", 0 , 1);
         alphaAnimator.setDuration(ANIM_DURATION);
         return alphaAnimator;
+    }
+
+    public void startMainActivity(){
+        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+        startActivity(intent);
+        SplashActivity.this.finish();
     }
 }
