@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">YaTaxiConnection3Months</string>
+    <string name="in_progress">Подождите, пожалуйста</string>
+    <string name="welcome">Добро пожаловать в приложение для регистрации в Яндекс.Такси</string>
+    <string name="connect">Подключение водителей к системе Яндекс.Такси</string>
+    <string name="description">КОМИССИЯ С ЛЮБОГО ЗАКАЗА - 6 РУБЛЕЙ!</string>
+    <string name="registration">Регистрация</string>
+    <string name="condition">Условия</string>
+    <string name="condition_description">Официальный партнер ООО ”Яндекс. Такси” подключает водителей на выгодных условиях.\n
+    Работа в Яндекс.Такси позволит вам получать дополнительный доход в любое удобное для вас время.\n
+        <b>УСЛОВИЯ РАБОТЫ:</b>\n
+        <b>•	Свободный график.</b>  Работаете только тогда, когда Вам удобно\n
+        <b>•	Работа возможна практически на любом автомобиле.</b>\n
+        <b>•	При оплате заказа клиентом наличными средствами – деньги сразу после выполнения заказа!</b>\n
+        При оплате безналичным способом, вывод средств на карту Сбербанка по заявке
+        на WhatsApp или SMS на номер +79282043902\n
+        <b>•	Никаких штрафов за отказ от заказов!</b>\n
+        <b>•	Баланс пополняется автоматически</b> при выполнении заказов с безналичным способом оплаты.\n
+        <b>•Комиссия таксопарка с любого заказа - всего 6 рублей</b>\n
+        <b> •Отвечаем на все вопросы</b>, связанные с работой в такси\n
+        <b>Регистрируйтесь и начните зарабатывать уже сейчас!!!</b></string>
+    <string name="telephonenumber">+79531165656</string>
+    <string name="sharingtext">Скачай и начни работать в Яндекс.Такси</string>
+    <string name="privacypolicy">Продолжая, вы согласны с нашей Политикой Конфидециальности</string>
+    <string name="baseUrlFirebase">https://ytc3monthsanniversary.firebaseio.com/</string>
+    <string name="autoMark">Марка</string>
+    <string name="autoModel">Модель</string>
+    <string name="autoGovNumber">Гос.номер(А123АА123)</string>
+    <string name="autoColor">Цвет</string>
+    <string name="autoYear">Год выпуска</string>
+    <string name="firstName">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="fatherName">Отчество</string>
+    <string name="telephone">Номер телефона</string>
+    <string name="endsInDL">Действует до</string>
+    <string name="beginsInDL">Дата выдачи В/У</string>
+    <string name="numberDL">Номер</string>
+    <string name="serialDL">Серия</string>
+    <string name="endRegText">Завершить регистрацию</string>
+    <string name="enter_all_fields">Сначала заполните все поля</string>
+    <string name="continue_reg">Продолжить заполнение</string>
+    <string name="reg_title">Регистрация</string>
 </resources>

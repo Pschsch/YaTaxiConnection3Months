@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "799429242588",
+    "firebase_url": "https://ytc3monthsanniversary.firebaseio.com",
+    "project_id": "ytc3monthsanniversary",
+    "storage_bucket": "ytc3monthsanniversary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799429242588:android:cccf23013d906100",
+        "android_client_info": {
+          "package_name": "ru.pschsch.pschschapps.yataxiconnection3months"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799429242588-15h5fpsnilh30eg0a3bs9dbudpov06fr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.pschsch.pschschapps.yataxiconnection3months",
+            "certificate_hash": "58473d6ecd8bab8e88a5b143d939e9d43b14474d"
+          }
+        },
+        {
+          "client_id": "799429242588-q62d01rq4as0gmkvba4dldug3i3pfr7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhji2BbgTCe0jH1denxKMaZjuLkiMRNnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799429242588-q62d01rq4as0gmkvba4dldug3i3pfr7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="welcometextsize">10sp</dimen>
+    <dimen name="buttonCorner">12dp</dimen>
+    <dimen name="textSize">18sp</dimen>
+    <dimen name="yandexLogoPadding">24dp</dimen>
+    <dimen name="paddingForCardView">32dp</dimen>
+    <dimen name="paddingForLeftCardView">6dp</dimen>
+</resources>
